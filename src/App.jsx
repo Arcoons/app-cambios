@@ -24,20 +24,17 @@ export default function App() {
 
     return (
       enMesActual &&
-
-      
-      (!filtros.nombre ||
-        a.nombre.toLowerCase().includes(filtros.nombre.toLowerCase())) &&
-
+      (!filtros.nombre || a.nombre.toLowerCase().includes(filtros.nombre.toLowerCase())) &&
       (!filtros.estado || a.estado === filtros.estado) &&
-      (!filtros.equipo ||
-        a.equipo.toLowerCase().includes(filtros.equipo.toLowerCase())) &&
-      (!filtros.servicio ||
-        a.servicio.toLowerCase().includes(filtros.servicio.toLowerCase())) &&
-      (!filtros.duenio ||
-        a.duenio.toLowerCase().includes(filtros.duenio.toLowerCase())) &&
-      (!filtros.busqueda ||
-        a.descripcion.toLowerCase().includes(filtros.busqueda.toLowerCase()))
+      (!filtros.equipo || a.equipo.toLowerCase().includes(filtros.equipo.toLowerCase())) &&
+      (!filtros.servicio || a.servicio.toLowerCase().includes(filtros.servicio.toLowerCase())) &&
+      (!filtros.duenio || a.duenio.toLowerCase().includes(filtros.duenio.toLowerCase())) &&
+      (!filtros.busqueda || a.descripcion.toLowerCase().includes(filtros.busqueda.toLowerCase())) &&
+      (!filtros.socializado || a.socializado === filtros.socializado) &&
+      (!filtros.localizacion || a.localizacion.toLowerCase().includes(filtros.localizacion.toLowerCase())) &&
+      (!filtros.homologacion || a.homologacion === filtros.homologacion) &&
+      (!filtros.impacto || a.impacto === filtros.impacto) &&
+      (!filtros.categoria || a.categoria === filtros.categoria)
     );
   });
 
