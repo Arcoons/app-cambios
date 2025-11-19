@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔥 Eliminar completamente estilos del template de Vite */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Fondo global claro */
+body {
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+}
+
+/* Opcional: reset mínimo para que todo funcione bien */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

@@ -1,0 +1,32 @@
+export const alertas = [
+  {
+    id: 1,
+    nombre: "Cambio del Sistema",
+    estado: "Aprobado",
+    equipo: "UNIX",
+    servicio: "MGR",
+    duenio: "Juan Sebastian",
+    descripcion: "Cambio en reglas del Sistema",
+    fechaVencimiento: "2025-11-22",
+  },
+  {
+    id: 2,
+    nombre: "Certificados CRM",
+    estado: "Pendiente",
+    equipo: "BackOffice",
+    servicio: "MGR",
+    duenio: "María López",
+    descripcion: "Actualización de certificados SSL",
+    fechaVencimiento: "2025-11-28",
+  },
+  {
+    id: 3,
+    nombre: "Automatización Cambios",
+    estado: "Rechazado",
+    equipo: "Automatización",
+    servicio: "SETI",
+    duenio: "Christian ",
+    descripcion: "Creación apliación de cambios",
+    fechaVencimiento: "2025-11-25",
+  },
+];
