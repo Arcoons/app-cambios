@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Filtros from "./components/Filtros";
-import ListaAlertas from "./components/ListaAlertas";
 import { alertas } from "./data/alertasMock";
+import TablaAlertas from "./components/TablaAlertas";
+
 
 export default function App() {
   const [filtroActual, setFiltroActual] = useState({});
@@ -50,7 +51,7 @@ export default function App() {
       <h1 className="text-2xl font-bold mb-4">Gestión de Cambios</h1>
 
       <Filtros onFiltrar={setFiltroActual} onReset={resetFiltros} />
-      <ListaAlertas alertas={alertasFiltradas} />
+      <TablaAlertas alertas={alertasFiltradas} />
     </div>
   );
 }
